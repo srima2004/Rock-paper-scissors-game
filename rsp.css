@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana, Geneva;
+    font-size: 20px;
+   
+}
+.selections #btn1,#btn2,#btn3{
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 15px hsla(0, 0%, 0%, 0.5);
+    padding: 15px;
+    
+}
+
+
+.selections button{
+    font-size: 70px;
+    border-radius: 50px;
+    border: none;
+    background-color:hsla(275, 73%, 50%, 0.4);
+    cursor: pointer;
+    margin-right: 10px;
+}
+.selections button:hover{
+    background-color:hsla(275, 73%, 50%, 0.6) ;
+}
+.selections button:active{
+    background-color:hsla(275, 73%, 50%, 0.12)  ;
+}
+
+#playerDisplay,#computerDisplay{
+    font-size: 1.5rem;
+    font-family:Helvetica;
+    color :rgb(0, 0, 0);
+   margin-bottom: 20px;
+   font-weight: bold;
+}
+#resultDisplay{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.greendisplay {
+  background-color: hsl(120, 78%, 39%);
+  border-radius: 10px;
+  padding: 10px;
+}
+#playerScoreDisplay{
+    color:hsl(340, 61%, 41%);
+    
+}
+#computerScoreDisplay{
+    color:hsl(340, 61%, 41%);
+}
+.reddisplay{
+    background-color: hsl(0, 100%, 52%);
+    border-radius: 10px;
+    padding: 10px
+}
+.tiedisplay {
+    background-color: hsl(60, 100%, 50%); 
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+.win::after{
+    content: "😎";
+}
+.loose::after{
+    content: "😞";
+}
+.tie::after{
+    content: "🫂";
+}
